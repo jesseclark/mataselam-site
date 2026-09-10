@@ -3,87 +3,124 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MataSelam</title>
-<meta name="description" content="MataSelam is an offline-first mobile app that identifies Indo-Pacific marine life from a photo, for divers and snorkelers.">
+<title>MataSelam &mdash; Identify Indo-Pacific marine life</title>
+<meta name="description" content="MataSelam is an offline-first mobile app that identifies Indo-Pacific marine life from a photo, for divers and snorkelers. A project of Evolutionary Software Design LLC.">
+<link rel="canonical" href="https://mataselam.com/">
+<meta property="og:title" content="MataSelam">
+<meta property="og:description" content="An offline-first mobile app that identifies Indo-Pacific marine life from a photo, for divers and snorkelers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mataselam.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #14202a;
-    --muted: #5b6b73;
-    --bg: #f7f5f0;
-    --accent: #1f6f78;
-    --border: #e2ddd2;
-  }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-  body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-  }
-  main {
-    max-width: 560px;
-    text-align: center;
-  }
-  h1 {
-    font-family: 'Lora', Georgia, serif;
-    font-weight: 600;
-    font-size: clamp(2rem, 5vw, 2.75rem);
-    margin: 0 0 12px;
-    color: var(--ink);
-  }
-  p.tagline {
-    font-size: 1.1rem;
-    color: var(--muted);
-    margin: 0 0 32px;
-    line-height: 1.5;
-  }
-  .status {
-    display: inline-block;
-    font-size: 0.85rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    border-radius: 999px;
-    padding: 6px 16px;
-    margin-bottom: 28px;
-  }
-  .contact {
-    font-size: 0.95rem;
-    color: var(--muted);
-    border-top: 1px solid var(--border);
-    padding-top: 20px;
-    margin-top: 8px;
-  }
-  .contact a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-  .contact a:hover { text-decoration: underline; }
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <main>
-    <div class="status">In development</div>
-    <h1>MataSelam</h1>
-    <p class="tagline">
-      An offline-first mobile app that identifies Indo-Pacific marine life from a photo &mdash;
-      built for divers and snorkelers.
-    </p>
-    <div class="contact">
-      Get in touch: <a href="mailto:jesse@mataselam.com">jesse@mataselam.com</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">MataSelam</a>
+    <nav class="site-nav">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="/privacy/">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="border-top:none">
+    <div class="wrap">
+      <h1>Know what you just saw underwater.</h1>
+      <p class="tagline">
+        MataSelam identifies Indo-Pacific marine life from a photo &mdash; on the boat,
+        at the surface, or anywhere with no signal. Built for divers and snorkelers.
+      </p>
+      <span class="badge">In development &mdash; launching soon</span>
     </div>
-  </main>
+  </section>
+
+  <section id="how-it-works">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="lead">
+        Three things, and all of them work offline once the app is installed.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>Identify</h3>
+          <p>
+            Point the camera at a fish, nudibranch, ray or turtle and get the most
+            likely species, with close matches to compare. The recognition model
+            runs entirely on your phone.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Browse</h3>
+          <p>
+            A reference catalogue of nearly 5,000 Indo-Pacific species &mdash; names in
+            13 languages, photos, and which dive regions each one turns up in.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Remember</h3>
+          <p>
+            Log each dive and build a life list of everything you&rsquo;ve seen.
+            Import existing dives from your dive computer or logbook app.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>Features</h2>
+      <p class="lead">
+        Designed around real conditions on a dive trip &mdash; patchy connectivity,
+        a phone in a housing, a group comparing notes on the ride home.
+      </p>
+      <ul class="features">
+        <li><strong>Works offline.</strong> The species catalogue and the identification model are built into the app. No signal required.</li>
+        <li><strong>On-device recognition.</strong> Photos are identified locally on your phone, not uploaded to be processed.</li>
+        <li><strong>Indo-Pacific coverage.</strong> Bali, Raja Ampat, Sipadan &amp; Mabul, and other regions across the biome, expanding over time.</li>
+        <li><strong>Multilingual.</strong> Common names in 13 languages, including Indonesian, Filipino, Japanese, Thai and more.</li>
+        <li><strong>Dive log.</strong> Record dives and sightings, or import from a UDDF export.</li>
+        <li><strong>Gets better with use.</strong> When you correct a wrong identification, that feedback improves future versions of the model.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>
+        MataSelam is a project of <strong>Evolutionary Software Design LLC</strong>, a
+        Wyoming company. Development is based partly in Bali, Indonesia, working with
+        local dive operators to build the reference catalogue and improve species coverage.
+      </p>
+      <p>
+        The name is Indonesian &mdash; <em>mata selam</em>, &ldquo;diving eye.&rdquo; The goal is
+        a field guide that fits in your pocket, works where the reef is, and helps divers
+        and snorkelers pay closer attention to what they&rsquo;re looking at.
+      </p>
+      <p>
+        Questions, partnership enquiries, or press:
+        <a href="mailto:jesse@mataselam.com">jesse@mataselam.com</a>.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="company">Evolutionary Software Design LLC</p>
+    <p>5830 E 2nd St, Ste 7000, Casper, WY 82609, USA</p>
+    <p><a href="mailto:jesse@mataselam.com">jesse@mataselam.com</a> &middot; <a href="/privacy/">Privacy Policy</a></p>
+    <p>&copy; 2026 Evolutionary Software Design LLC. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
